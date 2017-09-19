@@ -1,0 +1,5 @@
+
+
+Como obter a posição precisa do usuário utilizando a classe Location. 
+O código está foi escrito se comportar de maneira esperada em nível de API 23 ou maior, 
+com o recurso de solicitar em tempo de execução o recurso de GPS ao usuário.

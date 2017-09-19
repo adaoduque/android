@@ -1,0 +1,18 @@
+
+
+Neste exemplo, temos uma abordagem mais completa para obter a posicão com base nos providers GPS e Network.
+Sua implementacão é simples:
+
+try {
+    MyLocation.LocationResult locationResult = new MyLocation.LocationResult(){
+        @Override
+        public void gotLocation(Location location){
+            Log.d("LOG", "LATITUDE: " + location.getLatitude());
+            Log.d("LOG", "LONGITUDE: " + location.getLongitude());
+        }
+    };
+    MyLocation myLocation = new MyLocation();
+    myLocation.getLocation(this, locationResult);
+}catch (SecurityException e){
+
+}

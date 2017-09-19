@@ -1,0 +1,15 @@
+
+
+Neste exemplo, temos uma outra abordagem mais completa para obter a posicão com base nos providers GPS e Network.
+Sua implementacão é simples:
+
+try {
+
+    GPSTracker gps = new GPSTracker(this);
+
+    Log.d("LOG", "Latitude: " + gps.getLatitude() );
+    Log.d("LOG", "Longitude: " + gps.getLongitude() );
+
+} catch (SecurityException e) {
+    // lets the user know there is a problem with the gps
+}
